@@ -10,7 +10,7 @@ function App() {
   const joinChatRoom = async (UserName,ChatRoom)=>{
     try{
      const connection = new HubConnectionBuilder()
-                        .withUrl("http://localhost:5219/chat")
+                        .withUrl("chattestappkaran.azurewebsites.net/chat")
                         .configureLogging(LogLevel.Information)
                         .build();
       //setup handler
